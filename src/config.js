@@ -4,7 +4,7 @@ const config = {
 		title: 'ZZJ的个人主页',
 		description: '欢迎来到ZZJ的奇妙世界！',
 		keywords: 'ZZJ,ZZJ-JACK,个人主页,个人网站',
-		icon: '/favicon.ico'   //网页图标，支持外链
+		icon: 'https://raw.githubusercontent.com/ZZJ-jack/HomePagesNew/refs/heads/main/blog_favicon.png'   //网页图标，支持外链
 	},
 
 	avatar: "https://raw.githubusercontent.com/ZZJ-jack/HomePagesNew/refs/heads/main/img/avatar.jpg", // 头像
@@ -63,8 +63,6 @@ const config = {
 
 	//打字机
 	typeWriterStrings: [
-		"顶峰的少年，给了你所有细节，你却说我不是迪迦，给不了你想要的光。",
-		"心简单，世界就简单，幸福才会生长；心自由，生活就自由，到哪都有快乐。",
 		"生命太短，没有时间留给遗憾，若不是终点，请微笑一直向前。",
 		"你说要攀上最高的山看日出，我却爱上了半路的松涛与夜雾。",
 		"心若看得见缝隙，光便有了形状；人若懂得低头，路便多了远方。",
@@ -143,10 +141,10 @@ const config = {
 
 	//项目卡片 其中 字段"show"控制初始卡片的text是否展开
 	projectcards: [
-		{ go: "🚀 前往", img: "/img/sunshine.jpg", title: "Blog", subtitle: "我的个人博客", text: "Blog，一些突然的所思所想", url: "https://blog.zzjjack.dpdns.org", show: false },
-		{ go: "🗂️ 前往", img: "/img/sunshine.jpg", title: "Coding", subtitle: "2,000 miles of wonder", text: "Coding，见到更好的自己", url: "https://gocoding.dpdns.org", show: false },
-		{ go: "📝 前往", img: "/img/sunshine.jpg", title: "谁是卧底", subtitle: "谁是卧底出题工具", text: "谁是卧底，第一个我自己做的前后端都有的项目", url: "https://spy.zzjjack.us.kg", show: false },
-		{ go: "👍 前往", img: "/img/sunshine.jpg", title: "真心话大冒险", subtitle: "真心话大冒险出题工具", text: "真心话大冒险，一个同学之间风靡的游戏", url: "https://truthwordstools.zzjjack.dpdns.org", show: false },
+		{ go: "🚀 前往", img: "https://raw.githubusercontent.com/ZZJ-jack/HomePagesNew/refs/heads/main/blog_favicon.png", title: "Blog", subtitle: "我的个人博客", text: "Blog，一些突然的所思所想", url: "https://blog.zzjjack.dpdns.org", show: false },
+		{ go: "🗂️ 前往", img: "https://github.com/ZZJ-jack/Coding_Home/blob/master/img/ico/site-ico.png?raw=true", title: "Coding", subtitle: "Coding团队主页", text: "Coding，见到更好的自己", url: "https://gocoding.dpdns.org", show: false },
+		{ go: "📝 前往", img: "", title: "谁是卧底", subtitle: "谁是卧底出题工具", text: "谁是卧底，第一个我自己做的前后端都有的项目", url: "https://spy.zzjjack.us.kg", show: false },
+		{ go: "👍 前往", img: "", title: "真心话大冒险", subtitle: "真心话大冒险出题工具", text: "真心话大冒险，一个同学之间风靡的游戏", url: "https://truthwordstools.zzjjack.dpdns.org", show: false },
 	],
 
 	statement: ["Copyright © 2026 ZZJ"],

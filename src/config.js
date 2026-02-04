@@ -7,7 +7,7 @@ const config = {
 		icon: '/favicon.ico'   //网页图标，支持外链
 	},
 
-	avatar: "/img/avatar.jpg", // 头像
+	avatar: "https://raw.githubusercontent.com/ZZJ-jack/HomePagesNew/refs/heads/main/img/avatar.jpg", // 头像
 	welcometitle: "Hi, I'm ZZJ", // 标题
 
 	// 颜色配置

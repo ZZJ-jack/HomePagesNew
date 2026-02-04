@@ -50,19 +50,19 @@ export default {
       tabs: [
         {
           icon: 'mdi-pencil-plus',
-          text: '样式预览',
+          text: '样式',
           value: 'tab-1',
           component: "tab1",
         },
         {
           icon: 'mdi-wallpaper',
-          text: '背景预览',
+          text: '背景',
           value: 'tab-2',
           component: "tab2",
         },
         {
           icon: 'mdi-music-circle-outline',
-          text: '音乐播放',
+          text: '音乐',
           value: 'tab-3',
           component: "tab3",
         },

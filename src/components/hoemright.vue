@@ -9,7 +9,7 @@
 				<v-text-field class="v-card"
 					:style="xs||sm?{'display':'none'}:{}"
 					v-model="searchQuery"
-					placeholder="搜索..."
+					placeholder="搜索......"
 					variant="outlined"
 					rounded
 					hide-details="true"
@@ -133,9 +133,15 @@ export default {
 			searchQuery: '',
 			selectedEngine: { title: 'Bing', value: 'bing' },
       		searchEngines :[
-				{ title: 'Bing', value: 'bing' },
-				{ title: 'Google', value: 'google' },
 				{ title: '百度', value: 'baidu' },
+				{ title: 'Bing', value: 'bing' },
+				{ title: '知乎', value: 'zhihu' },
+				{ title: 'CSDN', value: 'csdn' },
+				{ title: 'GitHub', value: 'github' },
+				{ title: 'GitCode', value: 'gitcode' },
+				{ title: 'Gitee', value: 'gitee' },
+				{ title: '微博', value: 'weibo' },
+				{ title: '豆瓣', value: 'douban' },
                 { title: '哔哩哔哩', value: 'bilibili' },
 			]
 		}
@@ -172,9 +178,15 @@ export default {
 			window.open(url, '_blank');
 		} else {
 			const engineUrls = {
-				google: `https://www.google.com/search?q=${encodeURIComponent(query)}`,
-				bing: `https://www.bing.com/search?q=${encodeURIComponent(query)}`,
 				baidu: `https://www.baidu.com/s?wd=${encodeURIComponent(query)}`,
+				bing: `https://www.bing.com/search?q=${encodeURIComponent(query)}`,
+				zhihu: `https://www.zhihu.com/search?type=content&q=${encodeURIComponent(query)}`,
+				csdn: `https://www.csdn.net/search?type=all&q=${encodeURIComponent(query)}`,
+				github: `https://github.com/search?q=${encodeURIComponent(query)}`,
+				gitcode: `https://gitcode.com/search?q=${encodeURIComponent(query)}`,
+				gitee: `https://gitee.com/search?q=${encodeURIComponent(query)}`,
+				weibo: `https://s.weibo.com/weibo/${encodeURIComponent(query)}`,
+				douban: `https://www.douban.com/search?q=${encodeURIComponent(query)}`,
                 bilibili: `https://search.bilibili.com/all?keyword=${encodeURIComponent(query)}`,
 			};
 			window.open(engineUrls[this.selectedEngine.value], '_blank');

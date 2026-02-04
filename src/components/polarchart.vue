@@ -44,7 +44,7 @@ export default {
         data: {
           labels: this.skills,
           datasets: [{
-            label: '技能点',
+            label: '技能',
             data: this.skillPoints,
             backgroundColor: colors,
             borderColor: colors.map(color => color.replace('0.6', '1')),

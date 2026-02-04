@@ -180,7 +180,7 @@ export default {
 				baidu: `https://www.baidu.com/s?wd=${encodeURIComponent(query)}`,
 				bing: `https://www.bing.com/search?q=${encodeURIComponent(query)}`,
 				zhihu: `https://www.zhihu.com/search?type=content&q=${encodeURIComponent(query)}`,
-				csdn: `https://www.csdn.net/search?q=${encodeURIComponent(query)}&t=&u=`,
+				csdn: `https://so.csdn.net/so/search?q=${encodeURIComponent(query)}&t=&u=`,
 				github: `https://github.com/search?q=${encodeURIComponent(query)}`,
 				gitcode: `https://gitcode.com/search?q=${encodeURIComponent(query)}`,
 				gitee: `https://gitee.com/search?q=${encodeURIComponent(query)}`,

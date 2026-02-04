@@ -140,7 +140,6 @@ export default {
 				{ title: 'GitHub', value: 'github' },
 				{ title: 'GitCode', value: 'gitcode' },
 				{ title: 'Gitee', value: 'gitee' },
-				{ title: '微博', value: 'weibo' },
 				{ title: '豆瓣', value: 'douban' },
                 { title: '哔哩哔哩', value: 'bilibili' },
 			]
@@ -181,11 +180,10 @@ export default {
 				baidu: `https://www.baidu.com/s?wd=${encodeURIComponent(query)}`,
 				bing: `https://www.bing.com/search?q=${encodeURIComponent(query)}`,
 				zhihu: `https://www.zhihu.com/search?type=content&q=${encodeURIComponent(query)}`,
-				csdn: `https://www.csdn.net/search?type=all&q=${encodeURIComponent(query)}`,
+				csdn: `https://www.csdn.net/search?q=${encodeURIComponent(query)}&t=&u=`,
 				github: `https://github.com/search?q=${encodeURIComponent(query)}`,
 				gitcode: `https://gitcode.com/search?q=${encodeURIComponent(query)}`,
 				gitee: `https://gitee.com/search?q=${encodeURIComponent(query)}`,
-				weibo: `https://s.weibo.com/weibo/${encodeURIComponent(query)}`,
 				douban: `https://www.douban.com/search?q=${encodeURIComponent(query)}`,
                 bilibili: `https://search.bilibili.com/all?keyword=${encodeURIComponent(query)}`,
 			};

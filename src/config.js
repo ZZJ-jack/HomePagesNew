@@ -1,14 +1,14 @@
 const config = {
 	//网页元数据
 	metaData: {
-		title: 'Leleo的个人主页🎉',
-		description: '欢迎来到Leleo的奇妙世界！',
-		keywords: 'Leleo,leleo,个人主页,个人网站',
+		title: 'ZZJ的个人主页',
+		description: '欢迎来到ZZJ的奇妙世界！',
+		keywords: 'ZZJ,ZZJ-JACK,个人主页,个人网站',
 		icon: '/favicon.ico'   //网页图标，支持外链
 	},
 
 	avatar: "/img/avatar.jpg", // 头像
-	welcometitle: "Hi, I'm Leleo", // 标题
+	welcometitle: "Hi, I'm ZZJ", // 标题
 
 	// 颜色配置
 	color: {
@@ -29,9 +29,9 @@ const config = {
 		"pc": {   //pc端
 			"type": "pic",   //"pic":静态壁纸;"video":动态壁纸
 			"datainfo": {
-				"title": "海洋女孩",
-				"preview": "/img/wallpaper/static/海洋女孩/image-pre.webp",
-				"url": "/img/wallpaper/static/海洋女孩/image.png",     //当然，也可填写网络地址或壁纸api，如随机PC壁纸api："url":"https://t.mwm.moe/pc"
+				"title": "书房夜晚",
+				"preview": "/img/wallpaper/static/书房夜晚/image-pre.webp",
+				"url": "/img/wallpaper/static/书房夜晚/image.png"
 			},
 		},
 		"mobile": {   //移动端
@@ -53,8 +53,8 @@ const config = {
 
 	//社交按钮
 	socialPlatformIcons: [
-		{ icon: "mdi-github", link: "https://www.github.com/leleo886" },
-		{ icon: "mdi-email", link: "mailto:leleo886@foxmail.com" },
+		{ icon: "mdi-github", link: "https://github.com/ZZJ-jack" },
+		{ icon: "mdi-email", link: "mailto:zzjjack@139.com" },
 		{ icon: "mdi-qqchat", link: "https://im.qq.com/" },
 		{ icon: "mdi-wechat", link: "https://wx.qq.com/" },
 		{ icon: "mdi-youtube", link: "https://www.youtube.com" },
@@ -63,10 +63,15 @@ const config = {
 
 	//打字机
 	typeWriterStrings: [
-		"如果你看到了这行字，说明我已经成功吸引到了你的注意力。",
 		"顶峰的少年，给了你所有细节，你却说我不是迪迦，给不了你想要的光。",
 		"心简单，世界就简单，幸福才会生长；心自由，生活就自由，到哪都有快乐。",
-		"生命太短，没有时间留给遗憾，若不是终点，请微笑一直向前。"
+		"生命太短，没有时间留给遗憾，若不是终点，请微笑一直向前。",
+		"你说要攀上最高的山看日出，我却爱上了半路的松涛与夜雾。",
+		"心若看得见缝隙，光便有了形状；人若懂得低头，路便多了远方。",
+		"时间像沙，握不紧却铺成了路，每一步都是写给世界的签名。",
+		"山沉默千年才懂得高度，你却在追问中错过自己的海拔。",
+		"所谓自由不过是选择自己的牢笼，并在其中起舞。",
+		"当向日葵不再追日，它发现了自己旋转的宇宙。",
 	],
 
 	//音乐播放配置，采用MetingJS Api(https://github.com/metowolf/MetingJS)
@@ -138,17 +143,13 @@ const config = {
 
 	//项目卡片 其中 字段"show"控制初始卡片的text是否展开
 	projectcards: [
-		{ go: "🚀 前往", img: "/img/sunshine.jpg", title: "Project 1", subtitle: "1,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "🗂️ 前往", img: "/img/sunshine.jpg", title: "Project 2", subtitle: "2,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "📝 前往", img: "/img/sunshine.jpg", title: "Project 3", subtitle: "3,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "👍 前往", img: "/img/sunshine.jpg", title: "Project 4", subtitle: "4,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "🗃 前往", img: "/img/sunshine.jpg", title: "Project 5", subtitle: "5,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "🎨 前往", img: "/img/sunshine.jpg", title: "Project 6", subtitle: "6,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "💍 前往", img: "/img/sunshine.jpg", title: "Project 7", subtitle: "7,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
-		{ go: "🔍 前往", img: "/img/sunshine.jpg", title: "Project 8", subtitle: "8,000 miles of wonder", text: "If you see this line, I've managed to get your attention.", url: "https://leleo.top", show: false },
+		{ go: "🚀 前往", img: "/img/sunshine.jpg", title: "Blog", subtitle: "我的个人博客", text: "Blog，一些突然的所思所想", url: "https://blog.zzjjack.dpdns.org", show: false },
+		{ go: "🗂️ 前往", img: "/img/sunshine.jpg", title: "Coding", subtitle: "2,000 miles of wonder", text: "Coding，见到更好的自己", url: "https://gocoding.dpdns.org", show: false },
+		{ go: "📝 前往", img: "/img/sunshine.jpg", title: "谁是卧底", subtitle: "谁是卧底出题工具", text: "谁是卧底，第一个我自己做的前后端都有的项目", url: "https://spy.zzjjack.us.kg", show: false },
+		{ go: "👍 前往", img: "/img/sunshine.jpg", title: "真心话大冒险", subtitle: "真心话大冒险出题工具", text: "真心话大冒险，一个同学之间风靡的游戏", url: "https://truthwordstools.zzjjack.dpdns.org", show: false },
 	],
 
-	statement: ["备案号：XXICP备123456789号", "Copyright © 2025 Leleo"],
+	statement: ["Copyright © 2026 ZZJ"],
 }
 
 export default config

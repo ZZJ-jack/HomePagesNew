@@ -1,7 +1,7 @@
 const config = {
 	//网页元数据
 	metaData: {
-		title: 'ZZJ的个人主页',
+		title: 'ZZJ的空间',
 		description: '欢迎来到ZZJ的奇妙世界！',
 		keywords: 'ZZJ,ZZJ-JACK,个人主页,个人网站',
 		icon: '/img/favicon.ico'   //网页图标，支持外链

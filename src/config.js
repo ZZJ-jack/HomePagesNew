@@ -4,10 +4,10 @@ const config = {
 		title: 'ZZJ的个人主页',
 		description: '欢迎来到ZZJ的奇妙世界！',
 		keywords: 'ZZJ,ZZJ-JACK,个人主页,个人网站',
-		icon: 'https://raw.githubusercontent.com/ZZJ-jack/HomePagesNew/refs/heads/main/blog_favicon.png'   //网页图标，支持外链
+		icon: '\img\favicon.ico'   //网页图标，支持外链
 	},
 
-	avatar: "https://raw.githubusercontent.com/ZZJ-jack/HomePagesNew/refs/heads/main/img/avatar.jpg", // 头像
+	avatar: "\img\logo.jpg", // 头像
 	welcometitle: "Hi, I'm ZZJ", // 标题
 
 	// 颜色配置
@@ -19,10 +19,10 @@ const config = {
 	},
 
 	brightness: 85, // 背景亮度 --%
-	blur: 5, // 毛玻璃模糊效果
+	blur: 3, // 毛玻璃模糊效果
 
 	// 我的标签
-	tags: ['乐观开朗', '温柔体贴', '随和亲切', '冷静沉着', '才思敏捷', '风趣幽默', '刚正不阿', '善解人意'],
+	tags: ['乐观开朗', '温柔体贴', '随和亲切', '冷静沉着', '才思敏捷', '风趣幽默', '善解人意'],
 
 	// 默认背景壁纸
 	background: {
@@ -47,8 +47,8 @@ const config = {
 
 	//极坐标图数据
 	polarChart: {
-		skills: ['Vue.js', 'React', 'JavaScript', 'Node', 'Java', 'Python', 'linux', 'Docker', 'MySQL', 'MongoDB', 'AWS'],
-		skillPoints: [85, 78, 88, 90, 80, 78, 85, 65, 82, 78, 70],
+		skills: ['Python', 'PyGame', 'C++', 'linux', 'Docker',],
+		skillPoints: [80, 90,80, 50, 78],
 	},
 
 	//社交按钮
@@ -57,8 +57,6 @@ const config = {
 		{ icon: "mdi-email", link: "mailto:zzjjack@139.com" },
 		{ icon: "mdi-qqchat", link: "https://im.qq.com/" },
 		{ icon: "mdi-wechat", link: "https://wx.qq.com/" },
-		{ icon: "mdi-youtube", link: "https://www.youtube.com" },
-		{ icon: "mdi-facebook", link: "https://www.facebook.com" }
 	],
 
 	//打字机

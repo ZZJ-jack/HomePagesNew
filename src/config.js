@@ -4,10 +4,10 @@ const config = {
 		title: 'ZZJ的个人主页',
 		description: '欢迎来到ZZJ的奇妙世界！',
 		keywords: 'ZZJ,ZZJ-JACK,个人主页,个人网站',
-		icon: '\img\favicon.ico'   //网页图标，支持外链
+		icon: '/img/favicon.ico'   //网页图标，支持外链
 	},
 
-	avatar: "\img\logo.jpg", // 头像
+	avatar: "/img/logo.jpg", // 头像
 	welcometitle: "Hi, I'm ZZJ", // 标题
 
 	// 颜色配置

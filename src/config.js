@@ -143,8 +143,8 @@ const config = {
 	projectcards: [
 		{ go: "前往", img: "https://raw.githubusercontent.com/ZZJ-jack/HomePagesNew/refs/heads/main/blog_favicon.png", title: "Blog", subtitle: "我的个人博客", text: "Blog，一些突然的所思所想", url: "https://blog.zzjjack.dpdns.org", show: false },
 		{ go: "前往", img: "https://github.com/ZZJ-jack/Coding_Home/blob/master/img/ico/site-ico.png?raw=true", title: "Coding", subtitle: "Coding团队主页", text: "Coding，见到更好的自己", url: "https://gocoding.dpdns.org", show: false },
-		{ go: "前往", img: "", title: "谁是卧底", subtitle: "谁是卧底出题工具", text: "谁是卧底，第一个我自己做的前后端都有的项目", url: "https://spy.zzjjack.us.kg", show: false },
-		{ go: "前往", img: "", title: "真心话大冒险", subtitle: "真心话大冒险出题工具", text: "真心话大冒险，一个同学之间风靡的游戏", url: "https://truthwordstools.zzjjack.dpdns.org", show: false },
+		{ go: "前往", img: "/img/wallpaper/static/书房夜晚/image.png", title: "谁是卧底", subtitle: "谁是卧底出题工具", text: "谁是卧底，第一个我自己做的前后端都有的项目", url: "https://spy.zzjjack.us.kg", show: false },
+		{ go: "前往", img: "/img/wallpaper/static/书房夜晚/image.png", title: "真心话大冒险", subtitle: "真心话大冒险出题工具", text: "真心话大冒险，一个同学之间风靡的游戏", url: "https://truthwordstools.zzjjack.dpdns.org", show: false },
 	],
 
 	statement: ["Copyright © 2026 ZZJ"],

@@ -65,7 +65,7 @@
           </v-row>
           
           <v-chip class="mt-3 ml-3" prepend-icon="mdi-webhook"  size="large" style="color: var(--leleo-vcard-color);">
-            部署项目
+            我的项目
           </v-chip>
           <v-container>
             <v-row>
@@ -136,8 +136,7 @@ export default {
 				{ title: 'Bing', value: 'bing' },
 				{ title: 'Google', value: 'google' },
 				{ title: '百度', value: 'baidu' },
-				{ title: 'Yandex', value: 'yandex' },
-				{ title: 'DuckDuckGo', value: 'duckduckgo' },
+                { title: '哔哩哔哩', value: 'bilibili' },
 			]
 		}
 	},
@@ -176,8 +175,7 @@ export default {
 				google: `https://www.google.com/search?q=${encodeURIComponent(query)}`,
 				bing: `https://www.bing.com/search?q=${encodeURIComponent(query)}`,
 				baidu: `https://www.baidu.com/s?wd=${encodeURIComponent(query)}`,
-				yandex: `https://yandex.com/search/?text=${encodeURIComponent(query)}`,
-				duckduckgo: `https://duckduckgo.com/?q=${encodeURIComponent(query)}`
+                bilibili: `https://search.bilibili.com/all?keyword=${encodeURIComponent(query)}`,
 			};
 			window.open(engineUrls[this.selectedEngine.value], '_blank');
 		}

@@ -12,6 +12,19 @@
         <source :src=videosrc type="video/mp4">
     </video>
 
+    <div class="zzj-nav-container">
+      <v-btn
+        variant="tonal"
+        color="var(--leleo-vcard-color)"
+        class="zzj-nav-btn"
+        :href="'https://sites.zzjjack.us.kg'"
+        target="_blank"
+        icon
+      >
+        <v-icon>mdi-web</v-icon>
+      </v-btn>
+    </div>
+
     <div class="floating-switch-container">
       <v-switch
         v-model="isClearScreen"
@@ -259,4 +272,23 @@
 <style scoped>
   @import url(/css/app.less);
   @import url(/css/mobile.less);
+
+  .zzj-nav-container {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+  }
+
+  .zzj-nav-btn {
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .zzj-nav-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
 </style>

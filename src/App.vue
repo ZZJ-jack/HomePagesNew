@@ -23,6 +23,16 @@
       >
         <v-icon>mdi-web</v-icon>
       </v-btn>
+      <v-btn
+        variant="tonal"
+        color="var(--leleo-vcard-color)"
+        class="zzj-nav-btn"
+        :href="'https://blog.zzjjack.us.kg'"
+        target="_blank"
+        icon
+      >
+        <v-icon>mdi-blog</v-icon>
+      </v-btn>
     </div>
 
     <div class="floating-switch-container">
@@ -278,6 +288,8 @@
     top: 1rem;
     left: 1rem;
     z-index: 1000;
+    display: flex;
+    gap: 0.5rem;
   }
 
   .zzj-nav-btn {

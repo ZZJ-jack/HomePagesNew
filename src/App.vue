@@ -298,7 +298,7 @@
 
   /* 博客链接 */
   .blog-link {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #ffffff;
     text-decoration: none;
@@ -311,6 +311,7 @@
     background-color: transparent;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: "baige", sans-serif;
   }
 
   .blog-link:hover {

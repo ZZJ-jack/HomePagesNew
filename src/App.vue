@@ -29,9 +29,8 @@
         class="zzj-nav-btn"
         :href="'https://blog.zzjjack.us.kg'"
         target="_blank"
-        icon
       >
-        <v-icon>mdi-blog</v-icon>
+        Blog
       </v-btn>
     </div>
 
@@ -293,8 +292,8 @@
   }
 
   .zzj-nav-btn {
-    width: 40px;
     height: 40px;
+    padding: 0 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
   }

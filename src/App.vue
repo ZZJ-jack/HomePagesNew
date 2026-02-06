@@ -288,6 +288,7 @@
     left: 1rem;
     z-index: 1000;
     display: flex;
+    flex-direction: column;
     gap: 0.5rem;
   }
 

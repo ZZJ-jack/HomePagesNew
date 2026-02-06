@@ -12,26 +12,16 @@
         <source :src=videosrc type="video/mp4">
     </video>
 
-    <div class="zzj-nav-container">
-      <v-btn
-        variant="tonal"
-        color="var(--leleo-vcard-color)"
-        class="zzj-nav-btn"
+    <!-- 主页按钮和标题 - 左上角 -->
+    <div class="home-btn-container">
+      <v-btn class="zzj-nav-btn" color="var(--leleo-vcard-color)" variant="tonal"
         :href="'https://sites.zzjjack.us.kg'"
         target="_blank"
         icon
       >
         <v-icon>mdi-web</v-icon>
       </v-btn>
-      <v-btn
-        variant="tonal"
-        color="var(--leleo-vcard-color)"
-        class="zzj-nav-btn"
-        :href="'https://blog.zzjjack.us.kg'"
-        target="_blank"
-      >
-        Blog
-      </v-btn>
+      <a href="https://blog.zzjjack.us.kg" target="_blank" class="blog-link">博客</a>
     </div>
 
     <div class="floating-switch-container">
@@ -282,19 +272,21 @@
   @import url(/css/app.less);
   @import url(/css/mobile.less);
 
-  .zzj-nav-container {
+  /* 主页按钮容器 - 左上角 */
+  .home-btn-container {
     position: absolute;
     top: 1rem;
     left: 1rem;
     z-index: 1000;
     display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+    align-items: center;
+    gap: 12px;
   }
 
+  /* 返回主页按钮样式 */
   .zzj-nav-btn {
+    width: 40px;
     height: 40px;
-    padding: 0 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
   }
@@ -302,5 +294,28 @@
   .zzj-nav-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  /* 博客链接 */
+  .blog-link {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0 12px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    background-color: transparent;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .blog-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.6);
   }
 </style>

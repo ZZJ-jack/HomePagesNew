@@ -14,14 +14,38 @@
 
     <!-- 主页按钮和标题 - 左上角 -->
     <div class="home-btn-container">
-      <v-btn class="zzj-nav-btn" color="var(--leleo-vcard-color)" variant="tonal"
-        :href="'https://sites.zzjjack.us.kg'"
-        target="_blank"
-        icon
-      >
-        <v-icon>mdi-web</v-icon>
-      </v-btn>
-      <a href="https://blog.zzjjack.us.kg" target="_blank" class="blog-link">博客</a>
+      <v-tooltip location="bottom">
+        <template v-slot:activator="{ props }">
+          <v-btn class="status-btn" color="var(--leleo-vcard-color)" variant="tonal"
+            href="https://status.zzjjack.us.kg/"
+            target="_blank"
+            icon
+            v-bind="props"
+          >
+            <v-icon>mdi-heart-pulse</v-icon>
+          </v-btn>
+        </template>
+        <span>站点状态</span>
+      </v-tooltip>
+      <v-tooltip location="bottom">
+        <template v-slot:activator="{ props }">
+          <v-btn class="zzj-nav-btn" color="var(--leleo-vcard-color)" variant="tonal"
+            :href="'https://sites.zzjjack.us.kg'"
+            target="_blank"
+            icon
+            v-bind="props"
+          >
+            <v-icon>mdi-web</v-icon>
+          </v-btn>
+        </template>
+        <span>导航页</span>
+      </v-tooltip>
+      <v-tooltip location="bottom">
+        <template v-slot:activator="{ props }">
+          <a href="https://blog.zzjjack.us.kg" target="_blank" class="blog-link" v-bind="props">博客</a>
+        </template>
+        <span>博客</span>
+      </v-tooltip>
     </div>
 
     <div class="floating-switch-container">
@@ -39,38 +63,11 @@
         <v-row>
             <v-col cols="12" md="4" lg="3" class="leleo-left" align="center">
               <div :style="xs||sm?{'font-size':'2.3rem'}:{'display':'none'}" class="leleo-left-welcome">{{ configdata.welcometitle }}</div>  
-              <v-avatar class="leleo-left-avatar" :size="xs||sm?120:140" :style="xs||sm?{'margin-top': '0'}:{'margin-top': '2rem'}" @mouseenter="musicplayershow(1)" @mouseleave="musicplayershow(0)">
-                  <v-img :class="{'leleo-spin':isPlaying}"
+              <v-avatar class="leleo-left-avatar" :size="xs||sm?150:180" :style="xs||sm?{'margin-top': '0'}:{'margin-top': '6rem'}">
+                  <v-img
                   alt="Leleo"
                   :src=configdata.avatar
                   ></v-img>
-                  <!-- 由于当ismusicplayer显示后，fadein无效果，所以需要设置一个过渡动画 -->
-                  <transition name="fade">
-                  <v-card v-show="ismusicplayer" class="musicplayer" :class="{'fade-in':ismusicplayer}" variant="tonal">
-                      <div v-if="audioLoading" class="loading-spinner">
-                          <v-progress-circular indeterminate></v-progress-circular>
-                      </div>
-                      <span ref="audiotitle" class="musicplayer-text"
-                        style="top: 1.6rem;font-weight: bolder;"
-                      >{{ musicinfo?.[0]?.title }}</span>
-                      <span ref="audioauthor" class="musicplayer-text"
-                        style="bottom: 1.4rem;"
-                      >{{ musicinfo?.[0]?.author }}</span>
-                      <audio v-show="false" ref="audioPlayer" :src="musicinfo?.[0]?.url"
-                      @waiting="onWaiting"
-                      @canplay="onCanPlay">
-                      </audio>
-                      <v-btn :size="xs||sm?22:30" color="#999999" icon @click="previousTrack()">
-                      <v-icon>mdi-skip-previous</v-icon>
-                      </v-btn>
-                      <v-btn :size="xs||sm?35:48" color="#999999" icon @click="togglePlay()">
-                      <v-icon>{{ isPlaying? 'mdi-pause' : 'mdi-play' }}</v-icon>
-                      </v-btn>
-                      <v-btn :size="xs||sm?22:30" color="#999999" icon @click="nextTrack()">
-                      <v-icon>mdi-skip-next</v-icon>
-                      </v-btn>
-                  </v-card>
-                  </transition>
                 </v-avatar>
 
                 <v-card class="ma-5 pa-2 leleo-left-card" variant="tonal" :max-width="xs?270:300" style="text-align: center;">
@@ -296,6 +293,19 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
 
+  /* 状态检测按钮样式 */
+  .status-btn {
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .status-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
   /* 博客链接 */
   .blog-link {
     font-size: 1.5rem;
@@ -318,5 +328,15 @@
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     border-color: rgba(255, 255, 255, 0.6);
+  }
+
+  .leleo-left-avatar {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .leleo-left-avatar:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   }
 </style>

@@ -2,7 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- 基础 favicon (兼容性最好) -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- 标准 PNG 尺寸 -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <!-- iOS 添加到主屏幕 -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Android 等 PWA 应用清单 -->
+    <link rel="manifest" href="/site.webmanifest">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="msvalidate.01" content="DE298BADC47B330C4304C41F067D6F4C" />
     <link rel="stylesheet" href="/css/style.css">
@@ -11,6 +20,8 @@
     <title>ZZJ的个人空间 - 欢迎来到ZZJ的奇妙世界</title>
   </head>
   <body>
+    <!-- 🔍 为搜索引擎爬虫添加的隐藏 <h1>，解决“缺少 <h1> 标记”的错误 -->
+    <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">ZZJ的个人空间 - 欢迎来到ZZJ的奇妙世界</h1>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>

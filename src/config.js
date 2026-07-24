@@ -146,6 +146,7 @@ const config = {
 		{ go: "前往", img: "/img/copy-logo.jpg", title: "云剪切板", subtitle: "在线云剪切板工具", text: "云剪切板，一个简单的工具", url: "https://copy.zzjjack.us.kg", show: false },
 		{ go: "前往", img: "/img/truthwords-logo.png", title: "真心话大冒险", subtitle: "真心话大冒险出题工具", text: "真心话大冒险，一个简单却有趣的游戏", url: "https://truthwordstools.zzjjack.dpdns.org", show: false },
 		{ go: "前往", img: "/img/gitee-logo.jpg", title: "Gitee代码获取", subtitle: "获取luogu的AC代码", text: "本工具会在Gitee上获取luogu的AC代码", url: "https://getzsyzcode.zzjjack.us.kg", show: false },
+		{ go: "前往", img: "/img/Just-Solo.ico", title: "Just-Solo", subtitle: "Just-Solo音乐播放器", text: "Just-Solo，一个高性能、低占用的音乐播放器", url: "https://gitcode.com/ZZJ-JACK/Just-Solo", show: false },
 	],
 
 	statement: ["Copyright © 2026 ZZJ"],

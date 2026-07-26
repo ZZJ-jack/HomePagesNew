@@ -140,7 +140,7 @@ const config = {
 	//项目卡片 其中 字段"show"控制初始卡片的text是否展开
 	projectcards: [
 		{ go: "前往", img: "/img/gocoding-logo.png", title: "Coding", subtitle: "Coding团队的主页", text: "在Coding，见到更好的自己", url: "https://gocoding.cc.cd", show: false },
-		{ go: "前往", img: "/img/Just-Solo.png", title: "Just-Solo", subtitle: "Just-Solo音乐播放器", text: "Just-Solo，一个高性能、低占用的音乐播放器", url: "https://justsolo.zzjjack.us.kg", show: false },
+		{ go: "前往", img: "/img/Just-Solo.png", title: "Just Solo", subtitle: "Just Solo音乐播放器", text: "Just Solo，一个高性能、低占用的音乐播放器", url: "https://justsolo.zzjjack.us.kg", show: false },
 		{ go: "前往", img: "/img/pvz-logo.jpg", title: "植物大战僵尸", subtitle: "用python写的植物大战僵尸游戏", text: "植物大战僵尸，一个经典的游戏", url: "https://pvz.zzjjack.us.kg", show: false },
 		{ go: "前往", img: "/img/spy-logo.png", title: "谁是卧底", subtitle: "谁是卧底出题工具", text: "谁是卧底，第一个前后端都有的项目", url: "https://spy.zzjjack.us.kg", show: false },
 		{ go: "前往", img: "/img/chat-logo.jpeg", title: "在线实时聊天室", subtitle: "在线聊天室", text: "ZZJ的聊天室，提供实时聊天功能", url: "https://chat.zzjjack.us.kg", show: false },
